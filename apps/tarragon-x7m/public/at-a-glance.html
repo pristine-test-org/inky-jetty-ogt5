@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The board at a glance</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      body { margin: 0; }
+      header { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 1rem; }
+      .mark { font-weight: 700; color: #3b4bc8; }
+      main { padding: 0; }
+      .intro { padding: 2rem 1rem 1rem; }
+      h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin: 0 0 1rem;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #3b4bc8, #c83b9a);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .steps { padding: 0 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+      .step {
+        /* Intentional, for Impeccable's test drive: layout property in a transition. */
+        width: 10rem;
+        transition: width 0.3s;
+        padding: 0.75rem;
+        border: 1px solid #e5e5e0;
+        border-radius: 0.5rem;
+      }
+      .step:hover { width: 12rem; }
+      .step span {
+        /* Intentional, for Impeccable's test drive: low-contrast text, light grey on near-white. */
+        color: #c4c4c0;
+      }
+      /* Intentional, for Impeccable's test drive: paragraph flush with the viewport edges, no background. */
+      .edge { margin: 1.5rem 0; padding: 0; max-width: none; line-height: 1.5; }
+      .back {
+        display: inline-block;
+        margin: 0 1rem 2rem;
+        color: #3b4bc8;
+        /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="mark">Tarragon</span>
+      <a href="/">Home</a>
+    </header>
+    <main>
+      <section class="intro">
+        <h1>The board at a glance</h1>
+        <p>Everything on the shared list, grouped so you can take it in quickly.</p>
+      </section>
+      <div class="steps">
+        <div class="step"><strong>Open</strong><br /><span>Items still to do.</span></div>
+        <div class="step"><strong>Done</strong><br /><span>Items already checked off.</span></div>
+        <div class="step"><strong>Latest</strong><br /><span>The five newest rows.</span></div>
+      </div>
+      <p class="edge">The board reads straight from the shared list, so a change made anywhere shows up here the next time you look.</p>
+      <a class="back" href="/">Back to the board</a>
+    </main>
+  </body>
+</html>
