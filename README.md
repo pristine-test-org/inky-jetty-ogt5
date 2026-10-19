@@ -1,21 +1,16 @@
 # Inky Jetty: Monorepo · Cloudflare (protected)
 
-> **This is a template, not a repository.** Copy it out and prepare it before an eval (steps below).
-> Nothing here is deployed.
-
 A monorepo with three apps on **Cloudflare**, with preview links **behind Cloudflare Access**. Static Vite +
 TypeScript, no framework. The page reads a live list from the shared Supabase test project.
 Row in the support matrix: impeccable-reviews#302.
 
 ## Deployment links
 
-Filled in at prep time.
-
 | App | Folder | Production | Preview gate |
 |---|---|---|---|
-| _app one_ | `apps/<app>` | _not deployed_ | yes |
-| _app two_ | `apps/<app>` | _not deployed_ | yes |
-| _app three_ | `apps/<app>` | _not deployed_ | yes |
+| quince-p4r | `apps/quince-p4r` | https://inky-jetty-ogt5-quince-p4r.pages.dev | yes: Cloudflare Access on `*.inky-jetty-ogt5-quince-p4r.pages.dev` |
+| tarragon-x7m | `apps/tarragon-x7m` | https://inky-jetty-ogt5-tarragon-x7m.pages.dev | yes: Cloudflare Access on `*.inky-jetty-ogt5-tarragon-x7m.pages.dev` |
+| ugli-k2d | `apps/ugli-k2d` | https://inky-jetty-ogt5-ugli-k2d.pages.dev | yes: Cloudflare Access on `*.inky-jetty-ogt5-ugli-k2d.pages.dev` |
 
 ## Names
 
